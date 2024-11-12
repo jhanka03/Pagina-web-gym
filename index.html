@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>BERSERKGYM</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <!-- Logo y nombre juntos -->
+            <div style="display: flex; align-items: center;">
+                <img src="img/logogym.jpg" alt="Logo THE GYM" style="height: 100px; margin-right: 50px;">
+                <h1>BERSERK <span class="txtRojo">GYM</span></h1>
+            </div>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+                <a href="#servicios" onclick="seleccionar()">Servicios</a>
+                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
+                <a href="#galeria" onclick="seleccionar()">Galería</a>
+                <a href="#equipo" onclick="seleccionar()">Equipo</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/jhan.sanabriavega"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/jhancarlo115"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/jhankax.png/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <h2>HAZ QUE <span class="txtRojo">OCURRA</span></h2>
+                <p>Triunfar es más fácil de lo que piensas!</p>
+                <a href="#nosotros" class="btn-mas">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </a>
+                <br><br>
+                <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+            </div>
+            <div class="opciones">
+                <div class="opcion">01.FITNESS</div>
+                <div class="opcion">02.CROSSFIT</div>
+                <div class="opcion">03.BOXING</div>
+                <div class="opcion">04.ENDURANCE</div>
+                <div class="opcion">05.YOGA</div>
+                <div class="opcion">06.CARDIO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="fila">
+            <div class="col">
+                <img src="img/nosotros.png" alt="Nosotros">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">01</div>
+                    <div class="info">
+                        <span class="frase">LA MEJOR EXPERIENCIA</span>
+                        <h2>NOSOTROS</h2>
+                    </div>
+                </div>
+                <p class="p-especial">En BERSERKGYM creemos en potenciar el bienestar físico y mental de cada miembro.</p>
+                <p>Nuestra misión es proporcionar un espacio inclusivo y motivador, equipado con lo mejor para que alcances tus metas. Desde entrenadores especializados hasta instalaciones de primera, cada detalle está pensado para ti.</p>
+                <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">02</div>
+                        <div class="info">
+                            <span class="frase">TU BIENESTAR ES PRIMERO</span>
+                            <h2>SERVICIOS</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">Descubre todos los servicios diseñados para llevarte al siguiente nivel.</p>
+                    <p>Ofrecemos clases de diferentes disciplinas como Fitness, Crossfit, Boxeo, Endurance, Yoga y Cardio, pensadas para cada necesidad de entrenamiento y nivel.</p>
+                </div>
+                <div class="col">
+                    <img src="img/servicios.png" alt="Servicios">
+                </div>
+            </div>
+        </div>
+        <div class="info-servicios">
+            <table>
+                <tr>
+                    <td><i class="fa-solid fa-person-walking"></i><h3><span class="txtRojo">Clases </span> de Fitness</h3><p>Entrenamientos personalizados para mejorar fuerza y resistencia.</p></td>
+                    <td><i class="fa-solid fa-dumbbell"></i><h3><span class="txtRojo">Clases </span> de Crossfit</h3><p>Clases intensivas para mejorar tu rendimiento y capacidad física.</p></td>
+                    <td><i class="fa-solid fa-mitten"></i><h3><span class="txtRojo">Clases </span> de Boxeo</h3><p>Desarrolla técnicas de combate y resistencia.</p></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-clock"></i><h3><span class="txtRojo">Clases </span> de Enduro</h3><p>Entrenamientos para mejorar la resistencia a largo plazo.</p></td>
+                    <td><i class="fa-solid fa-heart-circle-bolt"></i><h3><span class="txtRojo">Clases </span> de Cardio</h3><p>Clases dinámicas para aumentar tu resistencia cardiovascular.</p></td>
+                    <td><i class="fa-solid fa-bicycle"></i><h3><span class="txtRojo">Clases </span> de Ciclismo</h3><p>Intensidad y velocidad en entrenamientos sobre bicicleta.</p></td>
+                </tr>
+            </table>
+        </div>
+        <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+    </section>
+
+    <!-- SECCION COMODIDADES -->
+    <section id="comodidades" class="comodidades">
+        <div class="fila">
+            <div class="col">
+                <img src="img/fondo-galeria.jpg" alt="Comodidades">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">03</div>
+                    <div class="info">
+                        <span class="frase">COMODIDADES DE PRIMERA</span>
+                        <h2>COMODIDADES</h2>
+                    </div>
+                </div>
+                <p class="p-especial">Nuestro gimnasio ofrece todas las facilidades para que tu experiencia sea completa.</p>
+                <ul>
+                    <li><span>PILETA</span> - Zona de descanso y recuperación.</li>
+                    <li><span>WIFI GRATIS</span> - Mantente conectado mientras entrenas.</li>
+                    <li><span>ESTACIONAMIENTO GRATIS</span> - Espacio seguro para tu vehículo.</li>
+                    <li><span>LOCKERS</span> - Guardarropa seguro para tus pertenencias.</li>
+                    <li><span>DUCHAS</span> - Limpieza y comodidad después de cada entrenamiento.</li>
+                </ul>
+                <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION GALERÍA -->
+    <section id="galeria" class="galeria">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">04</div>
+                <div class="info">
+                    <span class="frase">INSPÍRATE</span>
+                    <h2>GALERÍA</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col"><img src="img/f1.jpg" alt="Foto de entrenamiento 1"></div>
+                <div class="col"><img src="img/f2.jpg" alt="Foto de entrenamiento 2"></div>
+                <div class="col"><img src="img/f3.jpg" alt="Foto de entrenamiento 3"></div>
+            </div>
+            <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+        </div>
+    </section>
+
+    <!-- SECCION EQUIPO -->
+    <section id="equipo" class="equipo">
+        <div class="contenedor-titulo">
+            <div class="numero">05</div>
+            <div class="info">
+                <span class="frase">CONOCE A NUESTRO EQUIPO</span>
+                <h2>EQUIPO</h2>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <img src="img/e1.png" alt="Entrenador 1">
+                <div class="info">
+                    <p>Juan Pérez - Entrenador Personal</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/e2.png" alt="Entrenador 2">
+                <div class="info">
+                    <p>Maria Gomez - Nutricionista</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="img/e3.png" alt="Entrenador 3">
+                <div class="info">
+                    <p>Carlos Díaz - Fisioterapeuta</p>
+                </div>
+            </div>
+        </div>
+        <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">06</div>
+                <div class="info">
+                    <span class="frase">CONTÁCTANOS</span>
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Teléfono">
+                </div>
+                <div class="col">
+                    <textarea placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <button>Enviar</button>
+            <div class="fila-datos">
+                <div class="col"><i class="fa-solid fa-map-marker-alt"></i> Dirección: Carrera 9 #41-48</div>
+                <div class="col"><i class="fa-solid fa-phone"></i> Teléfono: +57 3002031286</div>
+                <div class="col"><i class="fa-solid fa-envelope"></i> Email: contacto@BERSERKGYM.com</div>
+            </div>
+            <a href="suplementos.html" class="btn-redireccion">Visita nuestra tienda de suplementos</a>
+        </div>
+    </section>
+</body>
+</html>
